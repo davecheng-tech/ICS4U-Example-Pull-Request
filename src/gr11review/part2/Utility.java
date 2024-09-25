@@ -17,7 +17,7 @@ public class Utility {
         }
         return str.length();
     }
-    
+   
 
     /**
      * EXAMPLE 3
@@ -31,6 +31,21 @@ public class Utility {
     public static String converUpper(String str) {
         return str;
     }
-    
 
+    /**
+     * EXAMPLE 5
+     * 
+     * Converts a given string to uppercase.
+     *
+     * @param str the input string
+     * @return the string in uppercase
+     * @author J. Doe
+     */
+    public static String toUpperCase(String str) {
+        if (str == null) {
+            return null; // Handle null input
+        }
+        return str.toUpperCase();
+    }    
+  
 }
