@@ -9,7 +9,7 @@ public class Utility {
      *
      * @param str the input string
      * @return the length of the string in characters
-     * @author D. Cheng
+     * @author J. Doe
      */
     public static int getStringLength(String str) {
         if (str == null) {
@@ -31,6 +31,24 @@ public class Utility {
     public static String converUpper(String str) {
         return str;
     }
+
+
+    /**
+     * EXAMPLE 4
+     * 
+     * Converts a given string to lowercase.
+     *
+     * @param str the input string
+     * @return the string in uppercase
+     * @author J. Doe
+     */
+    public static String toLowerCase(String str) {
+        if (str == null) {
+            return null; // Handle null input
+        }
+        return str.toLowerCase();
+    }    
+    
 
     /**
      * EXAMPLE 5
