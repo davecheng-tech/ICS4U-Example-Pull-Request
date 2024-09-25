@@ -32,6 +32,24 @@ public class Utility {
         return str;
     }
 
+
+    /**
+     * EXAMPLE 4
+     * 
+     * Converts a given string to lowercase.
+     *
+     * @param str the input string
+     * @return the string in uppercase
+     * @author J. Doe
+     */
+    public static String toLowerCase(String str) {
+        if (str == null) {
+            return null; // Handle null input
+        }
+        return str.toLowerCase();
+    }    
+    
+
     /**
      * EXAMPLE 5
      * 
