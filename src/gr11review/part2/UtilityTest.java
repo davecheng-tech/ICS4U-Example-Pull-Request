@@ -6,20 +6,6 @@ import org.junit.jupiter.api.Test;
 public class UtilityTest{
 
     /**
-     * EXAMPLE 3
-     * 
-     * Tests for toUpperCase() method.
-     * @author J. Doe
-     */
-    @Test
-    public void toUpperCase_givenExamples_returnsCorrect() {
-        // Given examples
-        assertEquals("DAVID", Utility.toUpperCase("david"));
-        assertEquals("PASSWORD123", Utility.toUpperCase("password123"));
-    }
-
-  
-    /**
      * EXAMPLE 1
      * 
      * Unit tests for getStringLength() method.
@@ -52,4 +38,44 @@ public class UtilityTest{
         assertEquals(5, Utility.getStringLength("     "), "Length should be 5 for a string with 5 spaces");
     }
 
+
+    /**
+     * EXAMPLE 3
+     * 
+     * Test for toUppercase() method.
+     * @author D. Cheng
+     */
+    @Test
+    public void toUpperCase_givenExamples_returnsCorrect() {
+        // Given examples
+        assertEquals("DAVID", Utility.toUpperCase("david"));
+        assertEquals("PASSWORD123", Utility.toUpperCase("password123"));
+    }
+
+    @Test
+    public void toUpperCase_givenBlank_returnBlank() {
+        // Blank string
+        assertEquals("", Utility.toUpperCase(""));
+    }
+
+    @Test
+    public void toUpperCase_stringWithSymbols_returnsCorrect() {
+        // Mixed symbols, letters, and numbers
+        assertEquals("TH1$_W0RK$", Utility.toUpperCase("th1$_w0rk$"));
+    }
+
+    @Test
+    public void toUpperCase_allNumbers_returnsSame() {
+        // String with all numbers, returns same
+        assertEquals("123456789", Utility.toUpperCase("123456789"));
+    }
+
+    @Test
+    public void toUpperCase_allCaps_returnsSame() {
+        // All caps, should return same
+        assertEquals("ALLCAPS", Utility.toUpperCase("ALLCAPS"));
+    }
+
+
+    
 }
