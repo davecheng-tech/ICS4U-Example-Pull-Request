@@ -13,6 +13,7 @@ public class UtilityTest{
      */
     @Test
     public void getStringLength_givenExamples_returnsCorrect() {
+        // Given example cases
         assertEquals(13, Utility.getStringLength("Hello, World!"));
         assertEquals(6, Utility.getStringLength("Hello!"));
         assertEquals(5, Utility.getStringLength("Hello"));
@@ -20,22 +21,26 @@ public class UtilityTest{
 
     @Test
     public void getStringLength_emptyString_shouldReturn0() {
-        assertEquals(0, Utility.getStringLength(""), "Length of an empty string should be 0");
+        // Length of an empty string should be 0
+        assertEquals(0, Utility.getStringLength(""));
     }
 
     @Test
     public void getStringLength_nullString_shouldReturn0() {
-        assertEquals(0, Utility.getStringLength(null), "Length of a null string should be 0");
+        // Length of a null string should be 0
+        assertEquals(0, Utility.getStringLength(null));
     }
 
     @Test
     public void getStringLength_singleChar_shouldReturn1() {
-        assertEquals(1, Utility.getStringLength("A"), "Length of a single character string should be 1");
+        // Length of a single character string should be 1
+        assertEquals(1, Utility.getStringLength("A"));
     }
 
     @Test
     public void getStringLength_allSpaces_shouldReturn5() {
-        assertEquals(5, Utility.getStringLength("     "), "Length should be 5 for a string with 5 spaces");
+        // Length should be 5 for a string with 5 spaces
+        assertEquals(5, Utility.getStringLength("     "));
     }
 
 
