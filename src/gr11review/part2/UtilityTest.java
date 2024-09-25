@@ -41,6 +41,9 @@ public class UtilityTest{
 
     /**
      * EXAMPLE 3
+     * 
+     * Test for toUppercase() method.
+     * @author D. Cheng
      */
     @Test
     public void toUpperCase_givenExamples_returnsCorrect() {
