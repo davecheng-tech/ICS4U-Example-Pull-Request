@@ -20,20 +20,6 @@ public class Utility {
    
 
     /**
-     * EXAMPLE 3
-     * 
-     * Reserved for future use.
-     * 
-     * @param str
-     * @return 
-     * @author Dave Cheng
-     */
-    public static String converUpper(String str) {
-        return str;
-    }
-
-
-    /**
      * EXAMPLE 4
      * 
      * Converts a given string to lowercase.
