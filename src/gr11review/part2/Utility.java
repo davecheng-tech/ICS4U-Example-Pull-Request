@@ -9,7 +9,7 @@ public class Utility {
      *
      * @param str the input string
      * @return the length of the string in characters
-     * @author D. Cheng
+     * @author Dave Cheng
      */
     public static int getStringLength(String str) {
         if (str == null) {
@@ -26,7 +26,7 @@ public class Utility {
      * 
      * @param str
      * @return 
-     * @author D. Cheng
+     * @author Dave Cheng
      */
     public static String converUpper(String str) {
         return str;
@@ -39,7 +39,7 @@ public class Utility {
      *
      * @param str the input string
      * @return the string in uppercase
-     * @author J. Doe
+     * @author John Doe
      */
     public static String toUpperCase(String str) {
         if (str == null) {
